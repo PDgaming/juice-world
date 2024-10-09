@@ -45,7 +45,7 @@
       <a href="#juice">Juice</a>
     </li>
     <li class="text-xl">
-      <a href="#snacks">Snacks</a>
+      <a href="#snack">Snacks</a>
     </li>
     <div class="form-control">
       <input

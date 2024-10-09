@@ -21,7 +21,7 @@
   <Hero />
   <br />
   <div class="all-items mb-10">
-    <div class="cofee">
+    <div class="cofee" id="cofee">
       <div class="title mb-5">
         <center>
           <h1 class="text-4xl">Coffee</h1>
@@ -44,7 +44,7 @@
         {/each}
       </div>
     </div>
-    <div class="Tea">
+    <div class="Tea" id="tea">
       <div class="title mb-5">
         <center>
           <h1 class="text-4xl">Tea</h1>
@@ -67,7 +67,7 @@
         {/each}
       </div>
     </div>
-    <div class="Juice">
+    <div class="Juice" id="juice">
       <div class="title mb-5">
         <center>
           <h1 class="text-4xl">Juices</h1>
@@ -90,10 +90,10 @@
         {/each}
       </div>
     </div>
-    <div class="Snacks">
+    <div class="Snacks" id="snack">
       <div class="title mb-5">
         <center>
-          <h1 class="text-4xl">Snacks</h1>
+          <h1 class="text-4xl">Snack</h1>
         </center>
       </div>
       <div class="cataloge">
