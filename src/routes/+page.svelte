@@ -12,6 +12,32 @@
       image: "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg",
     },
   ];
+  let teaItems = [
+    {
+      title:
+        "Taaza Green Tea , 180 grams pack ",
+      price: "100rs",
+      id: "coffee1",
+      image: "https://m.media-amazon.com/images/I/61ygjeXuzqL._SX679_.jpg",
+    },
+  ];
+  let juiceItems = [
+    {
+      title: "Top Juice Mango - 1L Alphonso Mango ",
+      price: "100rs",
+      id: "juice1",
+      image: "https://m.media-amazon.com/images/I/61J3qiRVcJL._SL1500_.jpg",
+    },
+  ];
+  let snackItems = [
+    {
+      title:
+        "Nilgiris Flavoured Milk - Cold Coffee, Classic Pet Bottle, 180 ml ",
+      price: "100rs",
+      id: "coffee1",
+      image: "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg",
+    },
+  ];
 </script>
 
 <div class="main">
@@ -51,7 +77,7 @@
         </center>
       </div>
       <div class="cataloge">
-        {#each cofeeItems as item}
+        {#each teaItems as item}
           <div class="card card-compact bg-base-100 w-96 shadow-xl">
             <figure>
               <img src={item.image} alt={item.title} />
@@ -74,7 +100,7 @@
         </center>
       </div>
       <div class="cataloge">
-        {#each cofeeItems as item}
+        {#each juiceItems as item}
           <div class="card card-compact bg-base-100 w-96 shadow-xl">
             <figure>
               <img src={item.image} alt={item.title} />
@@ -97,7 +123,7 @@
         </center>
       </div>
       <div class="cataloge">
-        {#each cofeeItems as item}
+        {#each snackItems as item}
           <div class="card card-compact bg-base-100 w-96 shadow-xl">
             <figure>
               <img src={item.image} alt={item.title} />
