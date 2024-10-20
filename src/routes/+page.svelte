@@ -47,6 +47,32 @@
       image: "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg",
     },
   ];
+  let teaItems = [
+    {
+      title:
+        "Taaza Green Tea , 180 grams pack ",
+      price: "100rs",
+      id: "coffee1",
+      image: "https://m.media-amazon.com/images/I/61ygjeXuzqL._SX679_.jpg",
+    },
+  ];
+  let juiceItems = [
+    {
+      title: "Top Juice Mango - 1L Alphonso Mango ",
+      price: "100rs",
+      id: "juice1",
+      image: "https://m.media-amazon.com/images/I/61J3qiRVcJL._SL1500_.jpg",
+    },
+  ];
+  let snackItems = [
+    {
+      title:
+        "Nilgiris Flavoured Milk - Cold Coffee, Classic Pet Bottle, 180 ml ",
+      price: "100rs",
+      id: "coffee1",
+      image: "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg",
+    },
+  ];
 </script>
 
 <div class="main">
