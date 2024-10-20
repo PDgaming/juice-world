@@ -3,7 +3,42 @@
   import Navbar from "./components/navbar.svelte";
   import Hero from "./components/herosection.svelte";
 
-  let cofeeItems = [
+  type items = [
+    {
+      title: string;
+      price: string;
+      id: string;
+      image: string;
+    },
+  ];
+
+  let cofeeItems: items = [
+    {
+      title:
+        "Nilgiris Flavoured Milk - Cold Coffee, Classic Pet Bottle, 180 ml ",
+      price: "100rs",
+      id: "coffee1",
+      image: "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg",
+    },
+  ];
+  let teaItems: items = [
+    {
+      title:
+        "Nilgiris Flavoured Milk - Cold Coffee, Classic Pet Bottle, 180 ml ",
+      price: "100rs",
+      id: "coffee1",
+      image: "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg",
+    },
+  ];
+  let juiceItems: items = [
+    {
+      title: "Top Juice Mango - 1L Alphonso Mango ",
+      price: "100rs",
+      id: "juice1",
+      image: "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg",
+    },
+  ];
+  let snackItems: items = [
     {
       title:
         "Nilgiris Flavoured Milk - Cold Coffee, Classic Pet Bottle, 180 ml ",
@@ -51,7 +86,7 @@
         </center>
       </div>
       <div class="cataloge">
-        {#each cofeeItems as item}
+        {#each teaItems as item}
           <div class="card card-compact bg-base-100 w-96 shadow-xl">
             <figure>
               <img src={item.image} alt={item.title} />
@@ -74,7 +109,7 @@
         </center>
       </div>
       <div class="cataloge">
-        {#each cofeeItems as item}
+        {#each juiceItems as item}
           <div class="card card-compact bg-base-100 w-96 shadow-xl">
             <figure>
               <img src={item.image} alt={item.title} />
@@ -97,7 +132,7 @@
         </center>
       </div>
       <div class="cataloge">
-        {#each cofeeItems as item}
+        {#each snackItems as item}
           <div class="card card-compact bg-base-100 w-96 shadow-xl">
             <figure>
               <img src={item.image} alt={item.title} />
