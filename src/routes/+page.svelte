@@ -3,28 +3,42 @@
   import Navbar from "./components/navbar.svelte";
   import Hero from "./components/herosection.svelte";
 
-  let cofeeItems = [
+  type items = [
+    {
+      title: string;
+      price: number;
+      id: string;
+      image: string;
+    },
+  ];
+
+  let cofeeItems: items = [
     {
       title:
         "Nilgiris Flavoured Milk - Cold Coffee, Classic Pet Bottle, 180 ml ",
-      price: "100rs",
+      price: 100,
       id: "coffee1",
       image: "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg",
     },
   ];
-  let teaItems = [
+  let teaItems: items = [
     {
       title:
         "Taaza Green Tea , 180 grams pack ",
       price: "100rs",
       id: "tea1",
+    },
+    {
+     title: "Taaza Green Tea , 180 grams pack",
+      price: 100,
+      id: "coffee1",
       image: "https://m.media-amazon.com/images/I/61ygjeXuzqL._SX679_.jpg",
     },
   ];
-  let juiceItems = [
+  let juiceItems: items = [
     {
       title: "Top Juice Mango - 1L Alphonso Mango ",
-      price: "100rs",
+      price: 100,
       id: "juice1",
       image: "https://m.media-amazon.com/images/I/61J3qiRVcJL._SL1500_.jpg",
     },
@@ -35,6 +49,13 @@
       price: "100rs",
       id: "Milk Shake1",
       image: "https://m.media-amazon.com/images/I/91n++9MRdyL._SL1500_.jpg",
+  let snackItems: items = [
+    {
+      title:
+        "Nilgiris Flavoured Milk - Cold Coffee, Classic Pet Bottle, 180 ml ",
+      price: 100,
+      id: "coffee1",
+      image: "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg",
     },
   ];
 </script>
