@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts"
   import "./index.css";
   import Navbar from "./components/navbar.svelte";
   import Hero from "./components/herosection.svelte";
@@ -23,7 +23,13 @@
   ];
   let teaItems: items = [
     {
-      title: "Taaza Green Tea , 180 grams pack",
+      title:
+        "Taaza Green Tea , 180 grams pack ",
+      price: "100rs",
+      id: "tea1",
+    },
+    {
+     title: "Taaza Green Tea , 180 grams pack",
       price: 100,
       id: "coffee1",
       image: "https://m.media-amazon.com/images/I/61ygjeXuzqL._SX679_.jpg",
@@ -37,6 +43,12 @@
       image: "https://m.media-amazon.com/images/I/61J3qiRVcJL._SL1500_.jpg",
     },
   ];
+  let ShakesItems = [
+    {
+      title: "Spylt High Protein Vanilla Milkshake - Ready to Drink, Sugar Free" 
+      price: "100rs",
+      id: "Milk Shake1",
+      image: "https://m.media-amazon.com/images/I/91n++9MRdyL._SL1500_.jpg",
   let snackItems: items = [
     {
       title:
