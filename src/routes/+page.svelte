@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts"
   import "./index.css";
   import Navbar from "./components/navbar.svelte";
   import Hero from "./components/herosection.svelte";
@@ -17,7 +17,7 @@
       title:
         "Taaza Green Tea , 180 grams pack ",
       price: "100rs",
-      id: "coffee1",
+      id: "tea1",
       image: "https://m.media-amazon.com/images/I/61ygjeXuzqL._SX679_.jpg",
     },
   ];
@@ -29,13 +29,12 @@
       image: "https://m.media-amazon.com/images/I/61J3qiRVcJL._SL1500_.jpg",
     },
   ];
-  let snackItems = [
+  let ShakesItems = [
     {
-      title:
-        "Nilgiris Flavoured Milk - Cold Coffee, Classic Pet Bottle, 180 ml ",
+      title: "Spylt High Protein Vanilla Milkshake - Ready to Drink, Sugar Free" 
       price: "100rs",
-      id: "coffee1",
-      image: "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg",
+      id: "Milk Shake1",
+      image: "https://m.media-amazon.com/images/I/91n++9MRdyL._SL1500_.jpg",
     },
   ];
 </script>
