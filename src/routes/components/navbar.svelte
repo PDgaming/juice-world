@@ -1,10 +1,27 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import userImg from "../images/amongus.png";
   let items: number = 0;
   let subtotal: number = 0;
   let loggedIn: boolean = false;
+  let userEmail: string = "";
 
-  function logOut() {}
+  onMount(async () => {
+    //@ts-ignore
+    userEmail = sessionStorage.getItem("Email");
+    if (userEmail) {
+      loggedIn = true;
+    }
+  });
+
+  function logOut() {
+    if (userEmail) {
+      sessionStorage.removeItem("Email");
+      alert("You are logged out now.");
+    } else {
+      alert("You are already logged out.");
+    }
+  }
 </script>
 
 <div class="navbar">
@@ -101,24 +118,27 @@
         </div>
       </div>
     </div>
-    <div class="dropdown dropdown-end">
-      {#if loggedIn}
+    {#if loggedIn}
+      <div class="dropdown dropdown-end">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
           <div class="w-10 rounded-full">
-            <img alt="Tailwind CSS Navbar component" src={userImg} />
+            <img alt="User Image" src={userImg} />
           </div>
         </div>
-      {:else}
-        <div class="user">
-          <a data-sveltekit-preload-data href="/login">Sign In</a>
-          <a data-sveltekit-preload-data href="/register">Sign Up</a>
-        </div>
-      {/if}
-      <ul
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-      >
-        <li class="btn" onclick={logOut}>Logout</li>
-      </ul>
-    </div>
+        <ul
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+        >
+          <li>Welcome back, {userEmail}!</li>
+          <li>
+            <button class="btn" on:click|preventDefault={logOut}>Logout</button>
+          </li>
+        </ul>
+      </div>
+    {:else}
+      <div class="user">
+        <a data-sveltekit-preload-data href="/login">Sign In</a>
+        <a data-sveltekit-preload-data href="/register">Sign Up</a>
+      </div>
+    {/if}
   </ul>
 </div>

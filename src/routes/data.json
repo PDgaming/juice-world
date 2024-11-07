@@ -11,6 +11,12 @@
       "price": 100,
       "id": "coffee2",
       "image": "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg"
+    },
+    {
+      "title": "Brewed Coffee - Medium Roast, 250 ml",
+      "price": 120,
+      "id": "coffee3",
+      "image": "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg"
     }
   ],
   "teaItems": [
@@ -24,6 +30,12 @@
       "title": "Taaza Green Tea, 180 grams pack",
       "price": 100,
       "id": "tea2",
+      "image": "https://m.media-amazon.com/images/I/61ygjeXuzqL._SX679_.jpg"
+    },
+    {
+      "title": "Darjeeling Black Tea, 200 grams pack",
+      "price": 150,
+      "id": "tea3",
       "image": "https://m.media-amazon.com/images/I/61ygjeXuzqL._SX679_.jpg"
     }
   ],
@@ -39,6 +51,12 @@
       "price": 100,
       "id": "juice2",
       "image": "https://m.media-amazon.com/images/I/61J3qiRVcJL._SL1500_.jpg"
+    },
+    {
+      "title": "Orange Juice - 1L Freshly Squeezed",
+      "price": 110,
+      "id": "juice3",
+      "image": "https://m.media-amazon.com/images/I/61J3qiRVcJL._SL1500_.jpg"
     }
   ],
   "ShakesItems": [
@@ -53,20 +71,32 @@
       "price": 100,
       "id": "MilkShake2",
       "image": "https://m.media-amazon.com/images/I/91n++9MRdyL._SL1500_.jpg"
+    },
+    {
+      "title": "Chocolate Milkshake - 300 ml",
+      "price": 130,
+      "id": "MilkShake3",
+      "image": "https://m.media-amazon.com/images/I/91n++9MRdyL._SL1500_.jpg"
     }
   ],
   "snackItems": [
     {
-      "title": "Nilgiris Flavoured Milk - Cold Coffee, Classic Pet Bottle, 180 ml ",
-      "price": 100,
+      "title": "Granola Bar - Chocolate Chip, 50 grams",
+      "price": 50,
       "id": "snack1",
-      "image": "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg"
+      "image": "https://example.com/images/granola-bar.jpg"
     },
     {
-      "title": "Nilgiris Flavoured Milk - Cold Coffee, Classic Pet Bottle, 180 ml ",
-      "price": 100,
+      "title": "Granola Bar - Chocolate Chip, 50 grams",
+      "price": 50,
       "id": "snack2",
-      "image": "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg"
+      "image": "https://example.com/images/granola-bar.jpg"
+    },
+    {
+      "title": "Granola Bar - Chocolate Chip, 50 grams",
+      "price": 50,
+      "id": "snack3",
+      "image": "https://example.com/images/granola-bar.jpg"
     }
   ]
 }
