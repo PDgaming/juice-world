@@ -1,12 +1,13 @@
 <script lang="ts">
-  let userImg: string = "https://youtube.com/favicon.ico";
-  let items: number = 16;
-  let subtotal: number = 6000;
+  import userImg from "../images/amongus.png";
+  let items: number = 0;
+  let subtotal: number = 0;
+  let loggedIn: boolean = false;
 
   function logOut() {}
 </script>
 
-<div class="navbar bg-base-100">
+<div class="navbar">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -27,7 +28,20 @@
       </div>
       <ul
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-      ></ul>
+      >
+        <li class="text-xl">
+          <a href="#cofee">Cofee</a>
+        </li>
+        <li class="text-xl">
+          <a href="#tea">Tea</a>
+        </li>
+        <li class="text-xl">
+          <a href="#juice">Juice</a>
+        </li>
+        <li class="text-xl">
+          <a href="#snack">Snacks</a>
+        </li>
+      </ul>
     </div>
     <a class="btn btn-ghost text-xl" href="/">Juice World</a>
   </div>
@@ -88,15 +102,22 @@
       </div>
     </div>
     <div class="dropdown dropdown-end">
-      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-        <div class="w-10 rounded-full">
-          <img alt="Tailwind CSS Navbar component" src={userImg} />
+      {#if loggedIn}
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Tailwind CSS Navbar component" src={userImg} />
+          </div>
         </div>
-      </div>
+      {:else}
+        <div class="user">
+          <a data-sveltekit-preload-data href="/login">Sign In</a>
+          <a data-sveltekit-preload-data href="/register">Sign Up</a>
+        </div>
+      {/if}
       <ul
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
       >
-        <li class="btn" on:click={logOut}>Logout</li>
+        <li class="btn" onclick={logOut}>Logout</li>
       </ul>
     </div>
   </ul>
