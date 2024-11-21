@@ -7,7 +7,7 @@
 </script>
 
 <div class="main">
-  <div class="navbar">
+  <div class="navbar sticky">
     <Navbar />
   </div>
   <Hero />
@@ -80,5 +80,12 @@
   .catalog {
     display: flex;
     gap: 20px;
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--base-200);
+    backdrop-filter: blur(30px);
   }
 </style>

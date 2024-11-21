@@ -17,7 +17,13 @@
       "price": 120,
       "id": "coffee3",
       "image": "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg"
-    }
+    },
+    {
+      "title": "Brewed Coffee - Medium Roast, 250 ml",
+      "price": 120,
+      "id": "coffee3",
+      "image": "https://m.media-amazon.com/images/I/61kkXdCENOL._SL1200_.jpg"
+    }    
   ],
   "teaItems": [
     {
@@ -84,19 +90,19 @@
       "title": "Granola Bar - Chocolate Chip, 50 grams",
       "price": 50,
       "id": "snack1",
-      "image": "https://example.com/images/granola-bar.jpg"
+      "image": "https://cdn.gaiagoodhealth.com/wp-content/uploads/2024/02/26124221/chocolates-and-muesli-granola-bar-1000x1000-1.jpg"
     },
     {
       "title": "Granola Bar - Chocolate Chip, 50 grams",
       "price": 50,
       "id": "snack2",
-      "image": "https://example.com/images/granola-bar.jpg"
+      "image": "https://cdn.gaiagoodhealth.com/wp-content/uploads/2024/02/26124221/chocolates-and-muesli-granola-bar-1000x1000-1.jpg"
     },
     {
       "title": "Granola Bar - Chocolate Chip, 50 grams",
       "price": 50,
       "id": "snack3",
-      "image": "https://example.com/images/granola-bar.jpg"
+      "image": "https://cdn.gaiagoodhealth.com/wp-content/uploads/2024/02/26124221/chocolates-and-muesli-granola-bar-1000x1000-1.jpg"
     }
   ]
 }
